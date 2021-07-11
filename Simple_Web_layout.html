@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f1f1f1
+        }
+
+        .header {
+            background-color: #ddd;
+            text-align: center;
+            height: 80px;
+            padding: 15px;
+
+        }
+
+        div.navbar {
+            background-color: #333;
+            height: 70px;
+            
+        }
+
+        .navbar ul {
+            list-style-type: none;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            float: left;
+            display: block;
+            padding: 15px 7px;
+            position: relative;
+            margin-left: 50px;
+            top: 10px;
+            font-size: 18px;
+            color: blue;
+            
+
+        }
+
+        .navbar ul li a:not(.active):hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar ul li a.active {
+            background-color: #ddd;
+        }
+
+
+
+        .left-column {
+            width: 70%;
+            float: left;
+        }
+
+        .right-column {
+            width: 30%;
+            float: left;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        div.fakeimg p{
+            margin-bottom: 30px;
+        }
+        div.card p{
+            margin-top: 10px;
+        }
+        .footer{
+            background-color: #ddd;
+            text-align: center;
+            height: 80px;
+            padding: 15px;
+        }
+        .row::after{
+            clear:both;
+            display: table;
+        content: "";}
+        @media screen and (max-width: 800px) {
+            .right-column,.left-column{
+                width:100%;
+                padding: 0;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .navbar a{
+                float: none;
+                width: 100%;
+
+            }
+           .navbar a{
+               margin: 0;
+               padding: 0;
+
+           }
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Layout</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" id="home" class="active">Home</a></li>
+            <li><a href="#" id="home">Blogs</a></li>
+            <li><a href="#" id="home">About</a></li>
+            <li><a href="#" id="home">Contact</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="left-column">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>July 11, 2021</h5>
+                <div class="fakeimg"  style="height:200px">
+                    Image
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, laborum iusto possimus deleniti
+                    quidem fuga laboriosam debitis, ad voluptatem dicta atque et assumenda numquam ex aliquam, beatae
+                    nostrum culpa sed. Porro veritatis nisi voluptatem voluptates recusandae, rem nemo dolores similique
+                    qui eligendi corrupti sint eum. Aperiam, fugiat officiis? Nesciunt, est. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Saepe voluptatem nesciunt corrupti similique pariatur ipsum iusto est
+                    rem placeat laboriosam.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>July 11, 2021</h5>
+                <div class="fakeimg"  style="height:200px">
+                    Image
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, laborum iusto possimus deleniti
+                    quidem fuga laboriosam debitis, ad voluptatem dicta atque et assumenda numquam ex aliquam, beatae
+                    nostrum culpa sed. Porro veritatis nisi voluptatem voluptates recusandae, rem nemo dolores similique
+                    qui eligendi corrupti sint eum. Aperiam, fugiat officiis? Nesciunt, est. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Saepe voluptatem nesciunt corrupti similique pariatur ipsum iusto est
+                    rem placeat laboriosam.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>July 11, 2021</h5>
+                <div class="fakeimg"  style="height:200px">
+                    Image
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, laborum iusto possimus deleniti
+                    quidem fuga laboriosam debitis, ad voluptatem dicta atque et assumenda numquam ex aliquam, beatae
+                    nostrum culpa sed. Porro veritatis nisi voluptatem voluptates recusandae, rem nemo dolores similique
+                    qui eligendi corrupti sint eum. Aperiam, fugiat officiis? Nesciunt, est. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Saepe voluptatem nesciunt corrupti similique pariatur ipsum iusto est
+                    rem placeat laboriosam.
+                </p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="card">
+                <h2>About Us</h2>
+
+                <div class="fakeimg" style="height:100px">
+                    Image
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos, corporis ut mollitia
+                    exercitationem facilis aliquid laborum quis praesentium assumenda?</p>
+            </div>
+            <div class="card">
+                <h2>Popular Posts</h2>
+
+                <div class="fakeimg" style="height:250px">
+                    <p>Image</p>
+                    <p>Image</p>
+                    <p>Image</p>
+                    <p>Image</p>
+                </div>
+                
+                  
+                
+            </div>
+            <div class="card">
+                <h2>Follow Us</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos, corporis ut mollitia
+                    exercitationem facilis aliquid laborum quis praesentium assumenda?</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+
+</body>
+
+</html>
